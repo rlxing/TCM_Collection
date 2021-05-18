@@ -12,7 +12,19 @@
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>目录</title>
-
+    <style>
+        .zhongyi3body {
+            margin: 0;
+            padding: 0;
+            background-image: url("Images/古籍/004.jpg");
+            background-size: 100%;
+            position: relative;
+        }
+        .head1 {
+            background-image: url("Images/古籍/image1.jpg");
+            height: 15px;
+        }
+    </style>
 </head>
 <body class="zhongyi3body">
     <form id="form1" method="post" runat="server">
@@ -29,7 +41,6 @@
             </div>
         </div>
     </nav>
-        <div style="height:70px;"></div>
         <div class="head1"></div>
         <nav class="navbar navbar-default" role="navigation">
             <div class="navbar-header">
