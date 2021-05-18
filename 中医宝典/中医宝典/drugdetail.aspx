@@ -47,7 +47,7 @@
             <div  class="col-sm-7 col-md-7">
                 <div class="row">
                     <div class="col-sm col-md">
-                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString2 %>" SelectCommand="SELECT * FROM [drug] WHERE ([id] = @id)">
+                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString5 %>" SelectCommand="SELECT * FROM [drug] WHERE ([id] = @id)">
                             <SelectParameters>
                                 <asp:QueryStringParameter Name="id" QueryStringField="id" Type="Int32" />
                             </SelectParameters>
