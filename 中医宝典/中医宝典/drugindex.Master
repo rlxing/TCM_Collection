@@ -33,10 +33,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link" aria-current="page" href="#">24节气</a>
+            <a class="nav-link" aria-current="page" href="节气1.aspx">24节气</a>
             <a class="nav-link active" href="drugindex.aspx">药材检索</a>
-            <a class="nav-link" href="#">中医古籍</a>
-            <a class="nav-link" href="#">论坛</a>
+            <a class="nav-link" href="古籍1.aspx">中医古籍</a>
+            <a class="nav-link" href="论坛1.aspx">论坛</a>
           </div>
         </div>
       </div>

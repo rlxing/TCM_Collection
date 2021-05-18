@@ -105,14 +105,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
+    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\Jieqi.mdf" />
+    <Content Include="App_Data\Jieqi_log.ldf" />
     <Content Include="App_Data\luntan.mdf" />
     <Content Include="App_Data\luntan_log.ldf" />
     <Content Include="App_Data\med.mdf" />
     <Content Include="App_Data\med_log.ldf">
       <DependentUpon>med.mdf</DependentUpon>
     </Content>
-    <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -143,7 +147,6 @@
     <Content Include="Css\self\drugdetail.css" />
     <Content Include="Css\self\drugindex.css" />
     <Content Include="curedetail.aspx" />
-    <Content Include="Default.aspx" />
     <Content Include="drugadd.aspx" />
     <Content Include="drugdetail.aspx" />
     <Content Include="drugedit.aspx" />
@@ -160,6 +163,23 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Images\古籍\001.jpg" />
+    <Content Include="Images\古籍\002.png" />
+    <Content Include="Images\古籍\003.jpg" />
+    <Content Include="Images\古籍\004.jpg" />
+    <Content Include="Images\古籍\005.jpg" />
+    <Content Include="Images\古籍\006.jpg" />
+    <Content Include="Images\古籍\007.jpg" />
+    <Content Include="Images\古籍\headbj.jpg" />
+    <Content Include="Images\古籍\headimg.png" />
+    <Content Include="Images\古籍\image1.jpg" />
+    <Content Include="Images\古籍\list1.jpg" />
+    <Content Include="Images\古籍\list2.png" />
+    <Content Include="Images\古籍\千金翼方.PNG" />
+    <Content Include="Images\古籍\本草纲目.PNG" />
+    <Content Include="Images\古籍\神农本草经.PNG" />
+    <Content Include="Images\古籍\脉经.PNG" />
+    <Content Include="Images\古籍\金匮要略.PNG" />
     <Content Include="Images\节气\冬至.jpg" />
     <Content Include="Images\节气\处暑.jpg" />
     <Content Include="Images\节气\夏至.jpg" />
@@ -201,14 +221,18 @@
     <Content Include="Resources\images\drug\8.jpg" />
     <Content Include="Resources\images\drug\9.jpg" />
     <Content Include="Resources\images\style\background.jpg" />
+    <Content Include="StyleSheet1.css" />
+    <Content Include="古籍1.aspx" />
+    <Content Include="zhongyi2.aspx" />
+    <Content Include="zhongyi3.aspx" />
+    <Content Include="节气1.aspx" />
+    <Content Include="节气2.aspx" />
     <Content Include="论坛1.aspx" />
     <Content Include="发布论坛.aspx" />
     <Content Include="实时热点.aspx" />
     <Content Include="搜索.aspx" />
     <Content Include="最高热度.aspx" />
     <Content Include="查找.aspx" />
-    <Content Include="节气1.aspx" />
-    <Content Include="节气2.aspx" />
     <Content Include="论坛资讯.csproj.user" />
     <Content Include="详细页面.aspx" />
     <Content Include="Css\bootstrap\css\bootstrap-grid.css.map" />
@@ -273,34 +297,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="About.aspx.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="About.aspx.designer.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-    </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Contact.aspx.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
-    </Compile>
     <Compile Include="curedetail.aspx.cs">
       <DependentUpon>curedetail.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="curedetail.aspx.designer.cs">
       <DependentUpon>curedetail.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="drugadd.aspx.cs">
       <DependentUpon>drugadd.aspx</DependentUpon>
@@ -376,6 +379,41 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
+    <Compile Include="古籍1.aspx.cs">
+      <DependentUpon>古籍1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="古籍1.aspx.designer.cs">
+      <DependentUpon>古籍1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="zhongyi2.aspx.cs">
+      <DependentUpon>zhongyi2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="zhongyi2.aspx.designer.cs">
+      <DependentUpon>zhongyi2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="zhongyi3.aspx.cs">
+      <DependentUpon>zhongyi3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="zhongyi3.aspx.designer.cs">
+      <DependentUpon>zhongyi3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="节气1.aspx.cs">
+      <DependentUpon>节气1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="节气1.aspx.designer.cs">
+      <DependentUpon>节气1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="节气2.aspx.cs">
+      <DependentUpon>节气2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="节气2.aspx.designer.cs">
+      <DependentUpon>节气2.aspx</DependentUpon>
+    </Compile>
     <Compile Include="论坛1.aspx.cs">
       <DependentUpon>论坛1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -417,20 +455,6 @@
     </Compile>
     <Compile Include="查找.aspx.designer.cs">
       <DependentUpon>查找.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="节气1.aspx.cs">
-      <DependentUpon>节气1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="节气1.aspx.designer.cs">
-      <DependentUpon>节气1.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="节气2.aspx.cs">
-      <DependentUpon>节气2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="节气2.aspx.designer.cs">
-      <DependentUpon>节气2.aspx</DependentUpon>
     </Compile>
     <Compile Include="详细页面.aspx.cs">
       <DependentUpon>详细页面.aspx</DependentUpon>

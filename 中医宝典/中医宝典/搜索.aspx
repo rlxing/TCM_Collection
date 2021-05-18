@@ -43,26 +43,20 @@
     <form id="form3" runat="server">
         <div>
         </div>
-    <!-- 导航条 -->
-    <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">中医宝典</a>
-    </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li> 
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-<!-- 导航条 -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">宝典</a>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="节气1.aspx">24节气</a></li>
+                    <li><a href="drugindex.aspx">药材检索</a></li>
+                    <li><a href="古籍1.aspx">中医古籍</a></li>
+                    <li><a href="论坛1.aspx">论坛</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        <div style="height:70px;"></div>
      <div class="container">
 
  
@@ -103,8 +97,8 @@
                <br />
                <asp:Button ID="Button7" runat="server" Text="发布信息&lt;&lt;" OnClick="Button7_Click" />
                <br />
-                           <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [HOT-Forum]"></asp:SqlDataSource>
-               <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [NEW-Forum]"></asp:SqlDataSource>
+                           <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString4 %>" SelectCommand="SELECT * FROM [HOT-Forum]"></asp:SqlDataSource>
+               <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString4 %>" SelectCommand="SELECT * FROM [NEW-Forum]"></asp:SqlDataSource>
 
         </div>
        </div>
@@ -129,7 +123,7 @@
                 <HeaderStyle BackColor="Tan" Font-Bold="True" />
                 <PagerStyle BackColor="PaleGoldenrod" ForeColor="DarkSlateBlue" HorizontalAlign="Center" />
             </asp:DetailsView>
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Forum] WHERE ([Title] LIKE '%' + @Title + '%')">
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString4 %>" SelectCommand="SELECT * FROM [Forum] WHERE ([Title] LIKE '%' + @Title + '%')">
                 <SelectParameters>
                     <asp:QueryStringParameter Name="Title" QueryStringField="text" Type="String" />
                 </SelectParameters>

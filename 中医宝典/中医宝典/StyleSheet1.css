@@ -1,0 +1,70 @@
+﻿.zhongyi3body {
+    margin: 0;
+    padding: 0;
+    background-image: url("Images/古籍/004.jpg");
+    background-size: 100%;
+    position: relative;
+}
+.headfont {
+    font-size: 50px;
+    font-family: 华文行楷;
+    color: #882121;
+    margin: auto 10% auto auto;
+}
+.headfont1 {
+    font-size: 20px;
+    font-family: 华文行楷;
+    color: #882121;
+    margin: 30px auto auto auto;
+}
+.title {
+    font-size: 35px;
+    font-family: 华文行楷;
+    color: #7e0f0f;
+    margin: auto auto auto 20%;
+    border-bottom: rgb(145, 71, 19) solid 5px;
+    width: 60%;
+}
+.titleborder {
+    margin: 5px auto auto 20%;
+    border-bottom: rgb(145, 71, 19) solid 3px;
+    width: 60%;
+}
+.title1 {
+    font-size: 30px;
+    font-family: 华文行楷;
+    color: #ff0000;
+    font-weight: 900;
+}
+.title2 {
+    font-size: 25px;
+    font-family: 华文行楷;
+    color: #7e0f0f;
+}
+.title3 {
+    border-bottom: rgb(145, 71, 19) solid 2px;
+    font-size: 20px;
+    font-family: 隶书;
+    color: #7e0f0f;
+}
+.head1 {
+    background-image: url("Images/古籍/image1.jpg");
+    height: 15px;
+}
+.HyperLink1 {
+    font-size: 20px;
+    font-family: 隶书;
+    color: #7e0f0f;
+    margin: auto auto auto 10%;
+}
+.titleborder1 {
+    margin: auto auto auto 10%;
+    border-bottom: rgb(145, 71, 19) dashed 3px;
+    width: 80%;
+}
+.datalist1 {
+    margin: auto auto auto 5%;
+    border-bottom: rgb(145, 71, 19) solid 3px;
+    width: 90%;
+    font-size: 16px;
+}

@@ -7,11 +7,11 @@
 // </自动生成>
 //------------------------------------------------------------------------------
 
-namespace 中医宝典
+namespace _24节气
 {
 
 
-    public partial class 节气1
+    public partial class WebForm1
     {
     }
 }

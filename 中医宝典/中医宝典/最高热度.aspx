@@ -41,27 +41,20 @@
 </head>
 <body>
     <form id="form6" runat="server">
-    <!-- 导航条 -->
-    <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">中医宝典</a>
-    </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li> 
-          </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-<!-- 导航条 -->
+   <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">宝典</a>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="节气1.aspx">24节气</a></li>
+                    <li><a href="drugindex.aspx">药材检索</a></li>
+                    <li><a href="古籍1.aspx">中医古籍</a></li>
+                    <li><a href="论坛1.aspx">论坛</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        <div style="height:70px;"></div>
      <div class="container">
 
  
@@ -102,8 +95,8 @@
                <br />
                <asp:Button ID="Button5" runat="server" OnClick="Button5_Click" Text="发布信息&lt;&lt;" />
                <br />
-                           <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [HOT-Forum]"></asp:SqlDataSource>
-               <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [NEW-Forum]"></asp:SqlDataSource>
+                           <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString4 %>" SelectCommand="SELECT * FROM [HOT-Forum]"></asp:SqlDataSource>
+               <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString4 %>" SelectCommand="SELECT * FROM [NEW-Forum]"></asp:SqlDataSource>
 
         </div>
        </div>
@@ -116,7 +109,7 @@
            <div>
                
                <asp:Label ID="Label3" runat="server" Text="查看信息"></asp:Label>
-               <asp:SqlDataSource ID="SqlDataSource4" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [HOT-Forum] WHERE ([Id] = @Id)">
+               <asp:SqlDataSource ID="SqlDataSource4" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString4 %>" SelectCommand="SELECT * FROM [HOT-Forum] WHERE ([Id] = @Id)">
                    <SelectParameters>
                        <asp:QueryStringParameter Name="Id" QueryStringField="id" Type="Int32" />
                    </SelectParameters>
